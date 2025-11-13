@@ -1,6 +1,1 @@
-{
-  "buildCommand": "cd postfolio && npm install && npm run build",
-  "outputDirectory": "postfolio/.next",
-  "installCommand": "npm install --prefix postfolio",
-  "framework": "nextjs"
-}
+{}
