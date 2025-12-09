@@ -43,6 +43,7 @@ export function SplitText({ text, className = "", delay = 0 }: SplitTextProps) {
       animate="visible"
     >
       {words.map((word, index) => (
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <motion.span
           key={index}
           variants={child as any}

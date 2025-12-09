@@ -41,6 +41,7 @@ export function TestimonialCard({ testimonial, direction = 0 }: TestimonialCardP
   };
 
   return (
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     <motion.div
       initial="enter"
       animate="center"
