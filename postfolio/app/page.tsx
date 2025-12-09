@@ -706,7 +706,7 @@ export default function Home() {
         <div className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-full overflow-hidden bg-[var(--color-card)] shadow-soft flex items-center justify-center">
             <Image
-              src="/images/aro.png"
+              src="/images/aroll.png"
               alt="Arovision Tech Logo"
               width={44}
               height={44}
@@ -882,13 +882,13 @@ export default function Home() {
           {/* Left Column: Text Content */}
           <div className="order-2 md:order-1">
             <div className="text-base text-[var(--color-text-secondary)] leading-relaxed space-y-4 text-left">
-              <p>
+              <p className="text-justify">
                 My journey began with a curiosity about how technology transforms ideas into reality. Over the past 4 years, I've grown from a passionate learner into a full-stack developer, app creator, and SEO strategist building digital solutions that balance creativity with clean, scalable code.
               </p>
-              <p>
+              <p className="text-justify">
                 I started at <span className="font-semibold text-[var(--color-accent)]">Theeta Software House</span>, mastering full-stack development with PHP, React, and database management. At <span className="font-semibold text-[var(--color-accent)]">MicroTech Software House</span>, I honed my frontend and UI/UX skills, creating responsive interfaces for SaaS and EdTech platforms.
               </p>
-              <p>
+              <p className="text-justify">
                 Now at <span className="font-semibold text-[var(--color-accent)]">BoostXperts Software House</span>, I lead projects as a Web & App Developer and SEO Specialist, developing modern Next.js applications and optimizing digital performance for global brands. Each phase of my journey reinforces my belief that innovation and smart design create experiences that truly inspire.
               </p>
             </div>
@@ -1046,7 +1046,8 @@ export default function Home() {
             { name: "Jhonali Carpenter", img: "/images/cup5.jpg", desc: "Portfolio website for a carpentry business with project gallery and quote system.", tech: ["WordPress", "PHP", "jQuery"], url: "https://jhonalicarpenter.com" },
             { name: "Orekyo", img: "/images/or.png", desc: "Modern SaaS platform for business management with analytics dashboard.", tech: ["React", "Firebase", "Chart.js"], url: "https://orekyo.com" },
             { name: "Oladoc", img: "/images/doc.jpg", desc: "Healthcare appointment booking platform with doctor profiles and reviews.", tech: ["Laravel", "Vue.js", "MySQL"], url: "https://oladoc.com" },
-          ].map((project, idx) => (
+            { name: "Brand Value Sports", img: "/images/brw.png", desc: "Sports e-commerce platform for branded sportswear and equipment with secure checkout and product catalog.", tech: ["Next.js", "Tailwind", "Stripe"], url: "https://brandvaluesports.pk/" },
+          ].map((project: { name: string; img: string; desc: string; tech: string[]; url: string }, idx: number) => (
             <div key={idx} className="group bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image src={project.img} alt={project.name} fill style={{ objectFit: "cover" }} className="group-hover:scale-110 transition-transform duration-300" priority />

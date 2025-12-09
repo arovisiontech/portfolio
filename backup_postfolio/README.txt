@@ -1,0 +1,1 @@
+This folder is a backup of your original 'postfolio' folder before moving its contents to the root 'portfolio' directory. If anything goes wrong, you can restore your files from here.
