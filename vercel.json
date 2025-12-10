@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd postfolio && npm run build",
+  "outputDirectory": "postfolio/.next",
+  "installCommand": "cd postfolio && npm install"
+}
